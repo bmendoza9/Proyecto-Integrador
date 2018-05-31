@@ -1,0 +1,90 @@
+body{
+font-family: 'Lato', sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 245px;
+    /*! position: fixed; */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    float: left;
+}
+
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    background: #fff;
+}
+.sidenav a:hover{
+    color: black;
+}
+.sidebutton:active{
+    outline: none;
+border: none;
+}
+.sidebutton{
+  /*! display: block; */
+  width: 100%;
+  border: none;
+  text-align: left!important;
+  padding: 6px 8px 6px 16px;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  background-color: #111;
+  color: #818181;
+  font-size: 20px;
+    outline: none;
+border: none;
+}
+.dropStyle{
+  display: none!important;
+  color: red!important;
+  background-color: #FFF !important;
+}
+.w3-show{
+  display: block!important;
+}
+.w3-green{
+  color:black!important;background-color:#C0C0C0!important
+
+}
+.sidenav h1{
+    margin-bottom: 15px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+.sidebutton:hover {
+    color: #fff;
+}
+
+.main {
+    /*! margin-left: 160px; */ /* Same as the width of the sidenav */
+    /*! font-size: 20px; */ /* Increased text to enable scrolling */
+    /*! padding: 0px 10px; */
+    height: 462px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+}
+.main p{
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
