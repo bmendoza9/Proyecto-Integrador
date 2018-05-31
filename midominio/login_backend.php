@@ -2,7 +2,7 @@
 //variables de la BDD
 $db_host = "localhost";
 $db_user = "root";
-$db_password = "ULTRAZEALOT111";
+$db_password = "pass";
 $db_name = "pi";
 
 $conexion =mysqli_connect($db_host, $db_user, $db_password, $db_name);
