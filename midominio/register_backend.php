@@ -2,7 +2,7 @@
 $db_host = "localhost"; css
 
 $db_user = "root";
-$db_password = "ULTRAZEALOT111";
+$db_password = "";
 $db_name = "pi";
 //$db_table_name = "usuarioparticipante";
 
