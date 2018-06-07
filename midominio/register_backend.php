@@ -1,6 +1,5 @@
 <?php
-$db_host = "localhost"; css
-
+$db_host = "localhost";
 $db_user = "root";
 $db_password = "";
 $db_name = "pi";
@@ -21,8 +20,9 @@ $correo = $_POST["email"];
 $password = $_POST["password"];
 $gender = $_POST["gender"];
 $activar = 1;
+$hashed_password = hash('sha256', $password);
 //consulta para insertar
-$insertar = "INSERT INTO usuarioparticipante(nombres, apellidos, correo, password, gender, activo) VALUES ('$nombres', '$apellidos','$correo','$password','$gender','$activar')";
+$insertar = "INSERT INTO usuarioparticipante(nombres, apellidos, correo, password, gender, activo) VALUES ('$nombres','$apellidos','$correo','$password','$gender','$activar')";
 
 $verificar_correo = mysqli_query($conexion, "SELECT * FROM usuarioparticipante WHERE correo = '$correo'");
 if(mysqli_num_rows($verificar_correo)>0){
@@ -32,8 +32,6 @@ if(mysqli_num_rows($verificar_correo)>0){
           </script>';
   exit;
 }
-
-
 //ejecutar la consulta
 $resultado = mysqli_query($conexion,$insertar);
 if(!$resultado){
