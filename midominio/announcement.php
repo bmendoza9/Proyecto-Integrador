@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Convocatorias</title>
-  <link rel="stylesheet" type="text/css"  href="CSS/announcement.css">
-</head>
-<header id="header">
+
   <?php include("header.html") ?>
-</header>
+
 <body>
-  <div class="grid-section">
+  <div class="grid-section announcement ">
   	<ul class="grid">
   		<li>
   			<div class="grid-box grid-img-1">
@@ -68,7 +61,5 @@
   	</ul>
   </div>
 </body>
-<footer id="footer">
   <?php include("footer.html") ?>
-</footer>
 </html>

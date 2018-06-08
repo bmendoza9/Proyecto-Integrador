@@ -1,14 +1,4 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Noticias</title>
-  <link rel="stylesheet" type="text/css"  href="CSS/newscard.css">
-</head>
-<header id="header">
-  <?php include("header.html") ?>
-</header>
+<?php include("header.html") ?>
 <body>
   <div class="titulonews">
     <h1>Noticias</h1>
@@ -83,7 +73,5 @@
     </ul>
   </div>
 </body>
-<footer id="footer">
   <?php include("footer.html") ?>
-</footer>
 </html>

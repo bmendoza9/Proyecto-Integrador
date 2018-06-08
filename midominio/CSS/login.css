@@ -1,0 +1,130 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Lato', sans-serif;
+}
+body{
+  background-image: url(../imgs/backgroundyellow1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1024px;;
+}
+.form{
+  width: 500px;
+  height: 600px;
+  top:50%;
+  left:50%;
+  position: absolute;
+  text-align: center;
+  background-color:rgba(77, 166, 255, 0.7);
+  border-radius: 4px;
+  margin-top: 5px;
+  transform:translate(-50%,-50%);
+}
+.form img{
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+.form .head{
+  width:100%;
+  height:55px;
+  display:flex;
+}
+.form .head > div {
+  width:50%;
+  height:100%;
+  text-align:center;
+  font-size:20px;
+  line-height:55px;
+  cursor:pointer;
+  background:transparent;
+}
+.form .head.signup > div:nth-child(1),.form .head > div:nth-child(2) {
+  background:rgba(206, 204, 204, 0.7);
+  transition: all .3s ease-in-out;
+}
+.form .head.signup > div:nth-child(2) {
+  background:transparent !important;
+  transition: all .3s ease-in-out;
+}
+.form .body {
+  position:absolute;
+  overflow:hidden;
+  width:100%;
+  height:100%;
+}
+.form .body > div {
+  position:absolute;
+  width:100%;
+  height:100%;
+  transition:all 300ms ease-in-out;
+}
+.form .body > div.login {
+  left:0%;
+  margin-top: 80px;
+}
+.form .body > div.signup {
+  left:100%;
+  margin-top: 20px;
+}
+.form .body.active > div.login {
+  left:-100%;
+}
+.form .body.active > div.signup {
+  left:0%;
+}
+input[type="text"],input[type="password"],input[type="email"]{
+  height: 45px;
+  width: 300px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 30px;
+}
+.btn-submit{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ffbf00;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px;
+  width: 200px;
+  height: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      background-color: #e5ab00;
+}
+.btn-submit:active {
+  transform: translateY(4px);
+}
+a{
+  color: #000000;
+}
+.form .body .signup p{
+  margin-bottom: 30px;
+  font-family:'Lato', sans-serif;
+}
+.form .body .signup span{
+  font-family:'Lato', sans-serif;
+  font-size: 110%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.Message h1{
+  padding: 0 0 40px;
+}
+.Message p{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 80px;
+  background:rgba(206, 204, 204, 0.7);
+}
